@@ -83,15 +83,15 @@ function draw() {
     ctx.stroke();
     // Bouche (haut)
     ctx.beginPath();
-    ctx.moveTo(178, 80);
-    ctx.quadraticCurveTo(200, 88, 222, 80);
+    ctx.moveTo(178, 84);
+    ctx.quadraticCurveTo(200, 92, 222, 84);
     ctx.lineWidth = 2;
     ctx.strokeStyle = 'red';
     ctx.stroke();
     // Bouche (bas)
     ctx.beginPath();
-    ctx.moveTo(178, 80);
-    ctx.quadraticCurveTo(200, 100, 222, 80);
+    ctx.moveTo(178, 84);
+    ctx.quadraticCurveTo(200, 105, 222, 84);
     ctx.lineWidth = 2;
     ctx.strokeStyle = 'red';
     ctx.stroke();
