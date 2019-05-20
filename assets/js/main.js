@@ -3,6 +3,7 @@ function draw() {
   if (canvas.getContext) {
     var ctx = canvas.getContext("2d");
     // Corps
+    ctx.beginPath();
     ctx.fillStyle = '#976f16';
     ctx.fillRect(160, 100, 80, 180); // x, y, largeur, hauteur
     // Bras
@@ -66,5 +67,33 @@ function draw() {
     ctx.moveTo(210,280);
     ctx.quadraticCurveTo(225, 300, 240, 280);
     ctx.fill();
+    // Sourcil gauche
+    ctx.beginPath();
+    ctx.moveTo(174, 47);
+    ctx.quadraticCurveTo(184, 37, 194, 47);
+    ctx.lineWidth = 2;
+    ctx.strokeStyle = 'white'
+    ctx.stroke();
+    // Sourcil droit
+    ctx.beginPath();
+    ctx.moveTo(206, 47);
+    ctx.quadraticCurveTo(216, 37, 226, 47);
+    ctx.lineWidth = 2;
+    ctx.strokeStyle = 'white'
+    ctx.stroke();
+    // Bouche (haut)
+    ctx.beginPath();
+    ctx.moveTo(178, 80);
+    ctx.quadraticCurveTo(200, 88, 222, 80);
+    ctx.lineWidth = 2;
+    ctx.strokeStyle = 'red';
+    ctx.stroke();
+    // Bouche (bas)
+    ctx.beginPath();
+    ctx.moveTo(178, 80);
+    ctx.quadraticCurveTo(200, 100, 222, 80);
+    ctx.lineWidth = 2;
+    ctx.strokeStyle = 'red';
+    ctx.stroke();
   }
 }
